@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mylayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fixed_listItemHight"
+    android:background="@color/layout_background_color"
+    android:minHeight="@dimen/fixed_listItemHight">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/fixed_listItemHight"
+        android:layout_height="@dimen/fixed_listItemHight"
+        android:layout_margin="@dimen/layout_margin"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fixed_listItemHight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/image"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/artist_name"
+            style="@style/songDetails"
+            android:gravity="bottom"
+            tools:text="@string/artist_name" />
+
+        <TextView
+            android:id="@+id/song_name"
+            style="@style/songDetails"
+            android:gravity="top"
+            android:textStyle="bold"
+            tools:text="@string/song_name" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:src="@drawable/icon_play_arrow" />
+</RelativeLayout>

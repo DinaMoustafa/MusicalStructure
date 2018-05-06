@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dina.musicalstructure">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ClassicalActivity"
+            android:label="Classical music"/>
+        <activity android:name=".HipHopActivity"
+            android:label="Hip hop music"/>
+        <activity android:name=".JazzActivity"
+            android:label="Jazz music"/>
+        <activity android:name=".ReggaeActivity"
+            android:label="Reggae music"/>
+        <activity android:name=".CurrentSong"
+            android:label="Now Playing"/>
+    </application>
+
+</manifest>

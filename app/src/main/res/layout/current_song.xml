@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_color">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/librar_music_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/layout_margin"
+            android:background="@android:color/white"
+            android:contentDescription="@string/library_button"
+            android:src="@drawable/library_music" />
+
+        <ImageView
+            android:id="@+id/music_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/librar_music_ic"
+            android:layout_marginBottom="@dimen/margin"
+            android:contentDescription="@string/music_pic"
+            android:scaleType="fitCenter"
+            android:src="@drawable/music" />
+
+        <SeekBar
+            android:id="@+id/music_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/music_logo"
+            android:layout_marginTop="@dimen/margin" />
+
+        <LinearLayout
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/music_seekbar"
+            android:layout_marginTop="@dimen/margin"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/pausing_sound"
+                style="@style/playerFeatures"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:contentDescription="@string/pause_button"
+                android:src="@drawable/pause_button" />
+
+            <ImageButton
+                android:id="@+id/playing_sound"
+                style="@style/playerFeatures"
+                android:contentDescription="@string/play_button"
+                android:src="@drawable/play_button" />
+
+            <ImageButton
+                android:id="@+id/stopping_sound"
+                style="@style/playerFeatures"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:background="@android:color/white"
+                android:contentDescription="@string/stop_button"
+                android:src="@drawable/stop_button" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

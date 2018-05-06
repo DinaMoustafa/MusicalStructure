@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="weighted_height">0dp</dimen>
+    <dimen name="weighted_width">0dp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="fixed_listItemHight">88dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="margin">40dp</dimen>
+
+
+</resources>
